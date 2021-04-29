@@ -1,11 +1,11 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 from sys import argv
 
 if __name__ == "__main__":
 
     c = len(argv) - 1
     a = len(argv)
-    if j == 0:
+    if c == 0:
         print("{} arguments.".format(c))
 
     else:
