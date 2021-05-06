@@ -1,10 +1,12 @@
 #!/usr/bin/python3
-def multiple_returns(sentence):
-    stri = None
+def max_integer(my_list=[]):
+    if len(my_list) == 0:
+        return (None)
 
-    if sentence:
-        stri = sentence[0]
+    stri = my_list[0]
 
-    len_sentence = len(sentence)
+    for i in range(len(my_list)):
+        if my_list[i] > stri:
+            stri = my_list[i]
 
-    return (len_sentence, stri)
+    return (stri)
