@@ -27,7 +27,7 @@ class Square:
     def my_print(self):
         """that prints in stdout the square with"""
         if self.__size == 0:
-            print("\n")
+            print()
         else:
             for i in range(self.__size):
                     print("".join(["#"for x in range(self.__size)]))
