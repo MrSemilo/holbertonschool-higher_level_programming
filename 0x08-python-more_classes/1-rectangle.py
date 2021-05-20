@@ -23,12 +23,12 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         else:
             self.__width = value
-    
+
     @property
     def height(self):
         """ Returns"""
         return self.__height
-    
+
     @width.setter
     def height(self, value):
         """ Rectangle of __height"""
