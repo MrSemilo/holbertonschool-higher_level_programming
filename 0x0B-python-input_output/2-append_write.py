@@ -2,7 +2,7 @@
 """appends a string at the end of a text"""
 
 
-def write_file(filename="", text=""):
+def append_write(filename="", text=""):
     """write a file"""
     with open(filename, 'w') as fil:
         fil.write(text)
