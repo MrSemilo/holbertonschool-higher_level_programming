@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""Write a class MyList"""
+"""Module MyList class"""
 
 
 class MyList(list):
-    """ class"""
-
+    """subclass of list"""
     def __init__(self):
-        """def __init__"""
+        """initializes"""
         super().__init__()
 
     def print_sorted(self):
-        """def print_sorted(self):"""
+        """def print_sorted"""
         print(sorted(self))
