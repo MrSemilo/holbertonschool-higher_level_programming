@@ -5,7 +5,6 @@
 class MyList(list):
     """ class"""
 
-
     def __init__(self):
         """def __init__"""
         super().__init__()
