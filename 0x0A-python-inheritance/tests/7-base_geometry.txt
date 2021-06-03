@@ -1,0 +1,21 @@
+Import
+
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+cases
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("jj131204")
+    Traceback (most recent call last):
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("hello", -2)
+	Traceback (most recent call last):
+	ValueError: hello must be greater than 0
