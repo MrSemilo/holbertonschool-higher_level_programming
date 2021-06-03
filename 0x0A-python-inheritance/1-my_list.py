@@ -3,8 +3,8 @@
 
 
 class MyList(list):
+    """ def __init__"""
     def __init__(self):
-        """ def __init__"""
         super().__init__()
 
     def print_sorted(self):
