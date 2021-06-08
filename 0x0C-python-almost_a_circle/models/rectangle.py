@@ -99,7 +99,7 @@ class Rectangle(Base):
             self.id, self.__x, self.__y, self.__width, self.__height)
         return i
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """update"""
 
         if len(args) != 0:
@@ -113,6 +113,7 @@ class Rectangle(Base):
                 self.x = args[3]
             if len(args) > 4:
                 self.y = args[4]
+
         else:
             for key, value in kwargs.items():
                 if key == "id":
