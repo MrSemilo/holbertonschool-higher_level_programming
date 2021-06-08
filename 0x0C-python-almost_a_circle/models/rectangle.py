@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """class Rectangle add x and y"""
 
-from moduls.base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
