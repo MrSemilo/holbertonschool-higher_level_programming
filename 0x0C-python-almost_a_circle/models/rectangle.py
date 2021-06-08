@@ -92,3 +92,8 @@ class Rectangle(Base):
             else:
                 x = x + (a * self.__width)
         print(x)
+
+    def __str__(self):
+        i = "[Rectangle] ({}) {}/{} - {}/{}".format(
+            self.id, self.__x, self.__y, self.__width, self.__height)
+        return i
