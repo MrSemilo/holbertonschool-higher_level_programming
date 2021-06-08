@@ -81,17 +81,18 @@ class Rectangle(Base):
         return (self.height * self.width)
 
     def display(self):
-        """ Print the rectangle with the character #"""
-        x = ""
+        """ Print the rectangle with the character #
+        x = """
+
         a = "{}".format(self.print_symbol)
-        if self.__height == 0 or self.__width == 0:
-            print(x)
+        for y in range(0, self.__y):
+            print()
         for i in range(0, self.__height):
-            if i < self.__height - 1:
-                x = x + (a * self.__width + "\n")
-            else:
-                x = x + (a * self.__width)
-        print(x)
+            for c in range(0, self.__x):
+                print(" ", end="")
+            for v in range(0, self.__width):
+                print(a, end="")
+            print()
 
     def __str__(self):
         i = "[Rectangle] ({}) {}/{} - {}/{}".format(
