@@ -76,35 +76,4 @@ class Rectangle(Base):
 
     def area(self):
         """ Returns the rectangle area"""
-        return (self.height * self.width)
-
-    def display(self):
-        """ Print the rectangle with the character #"""
-
-        x = ""
-        a = "{}".format(self.print_symbol)
-        if self.__height == 0 or self.__width == 0:
-            print(x)
-        for i in range(0, self.__height):
-            if i < self.__height - 1:
-                x = x + (a * self.__width + "\n")
-            else:
-                x = x + (a * self.__width)
-        print(x)
-
-    def __str__(self):
-        i = "[Rectangle] ({}) {}/{} - {}/{}".format(
-            self.id, self.__x, self.__y, self.__width, self.__height)
-        return i
-
-    def update(self, *args):
-        if len(args) >= 1:
-            self.id = args[0]
-        if len(args) > 1:
-            self.width = args[1]
-        if len(args) > 2:
-            self.height = args[2]
-        if len(args) > 3:
-            self.x = args[3]
-        if len(args) > 4:
-            self.y = args[4]
+        return (self.height * self.width)     
