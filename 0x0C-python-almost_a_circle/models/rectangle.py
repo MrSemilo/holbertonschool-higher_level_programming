@@ -5,6 +5,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """def init"""
 
     print_symbol = '#'
 
