@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """class Rectangle add x and y"""
+
 from models.base import Base
 
 
