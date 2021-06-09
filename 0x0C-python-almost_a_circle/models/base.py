@@ -26,7 +26,7 @@ class Base:
 
         return json.dumps(list_dictionaries)
 
-        @classmethod
+    @classmethod
     def save_to_file(cls, list_objs):
         """add func JSON 2"""
 
