@@ -1,2 +1,4 @@
 #!/usr/bin/node
-const myVa = "C is fun"; const myV = "\nPython is cool"; const my = "\nJavaScript is amazing"; console.log(myVa,myV,my)
+console.log('C is fun');
+console.log('Python is cool');
+console.log('JavaScript is amazing');
