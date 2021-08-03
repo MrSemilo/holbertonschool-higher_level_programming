@@ -1,7 +1,8 @@
 #!/usr/bin/node
-// point 10
-let index = 0;
-exports.logMe = function (item) {
-  console.log(`${index}: ${item}`);
-  index = index + 1;
+/* Function that converts a number from base 10 to another base passed as
+ * argument */
+exports.converter = function (base) {
+  return function (number) {
+    return number.toString(base);
+  };
 };
