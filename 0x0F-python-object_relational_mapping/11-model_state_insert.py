@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""__name__"""
+"""
+__name__
+"""
 
 import sys
 from model_state import Base, State
