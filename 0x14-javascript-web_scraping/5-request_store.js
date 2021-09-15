@@ -10,7 +10,7 @@ request(argv, function (err, result, body) {
   } else {
     const fs = require('fs');
     const argv1 = process.argv[3];
-    fs.writeFile(agrv1, body, function (err) {
+    fs.writeFile(argv1, body, function (err) {
       if (err) {
         console.log('error: ', err);
       }
